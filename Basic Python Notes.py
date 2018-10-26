@@ -36,6 +36,4 @@ print("Hello %s" % name)
 real_age = int(input("How old are you? >_"))
 hidden_age = real_age + 5
 print(hidden_age)
-print("%d is incredibly old. you are actually %d old." % (hidden_age, real_age)
-
-age = input("How old are you?")
+print("%d is incredibly old. you are actually %d old.") % (hidden_age, real_age)
