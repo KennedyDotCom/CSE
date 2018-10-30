@@ -30,10 +30,41 @@ print(6 % 4)
 print(5 % 3)
 print(9 % 4)
 
-name = input("What is your name ")
-print("Hello %s" % name)
 
-real_age = int(input("How old are you? >_"))
-hidden_age = real_age + 5
-print(hidden_age)
-print("%d is incredibly old. you are actually %d old.") % (hidden_age, real_age)
+def printhelloworld():
+    print("Hello World!")
+
+printHelloWorld()
+
+#  This is a multi-line comment
+#  I can type anywhere here
+
+
+# f(x) = 2x + 3
+def f(x):
+    print(2*x + 3)
+
+f(1)
+
+
+#  Loops
+for i in {1, 2, 3}:
+    printHelloWorld()
+
+print()
+for i in range (3):
+    printHelloWorld()
+
+
+print()
+for i in range(5):
+    f(i)
+
+for i in range(5):
+    print(i**2)
+
+# While loops
+a = 0
+while a < 10:
+    print(a)
+    a += 1  # this is the same thing

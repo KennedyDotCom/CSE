@@ -14,3 +14,4 @@ Food_2 = input("Give me another type of food")
 Number_2 = input("Give me a another number")
 
 print("Pizza was invented by a %s  %s" % (Adjective_1, Nationality_1))
+print()
