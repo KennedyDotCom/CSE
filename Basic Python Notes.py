@@ -31,40 +31,34 @@ print(5 % 3)
 print(9 % 4)
 
 
-def printhelloworld():
-    print("Hello World!")
-
-printHelloWorld()
-
 #  This is a multi-line comment
 #  I can type anywhere here
 
 
 # f(x) = 2x + 3
 def f(x):
-    print(2*x + 3)
+    print(2 * x + 3)
+
 
 f(1)
 
 
-#  Loops
-for i in {1, 2, 3}:
-    printHelloWorld()
+#  Random Numbers
+import random  # This should always be on line 1
+print(random.randint(0, 100))
 
-print()
-for i in range (3):
-    printHelloWorld()
+# Contol Statements
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return 'D'
+    else:
+        return "F"
 
 
-print()
-for i in range(5):
-    f(i)
-
-for i in range(5):
-    print(i**2)
-
-# While loops
-a = 0
-while a < 10:
-    print(a)
-    a += 1  # this is the same thing
+print(grade_calc(82))
