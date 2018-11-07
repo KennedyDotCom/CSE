@@ -48,7 +48,7 @@ import random  # This should always be on line 1
 print(random.randint(0, 100))
 
 # Control Statements
-def grade_calc(percentage):
+ def grade_calc(percentage):
     if percentage >= 90:
         return "A"
     elif percentage >= 80:
