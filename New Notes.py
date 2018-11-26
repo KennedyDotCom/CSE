@@ -1,0 +1,27 @@
+#  Lists
+shopping_list = ["whole milk","Xbox One","Trash"]
+print(shopping_list)
+print(shopping_list[0])
+print("The second thing in the list %s" % shopping_list[1])
+print("The length of the list is %d" % len(shopping_list))
+# Lopping through lists
+for item in shopping_list:
+    print(item)
+
+'''
+
+1. Make a List
+2. change the 3rd thing in the list
+3. print the item
+4. print the full list
+'''
+new_list =["eggs", "chesse", "oranges" , "raspberries"]
+new_list[2] = "apples"
+print("The last thing in the list is %s" % new_list[len(new_list) - 1])
+print(new_list)
+
+# Getting part of a list
+print(new_list[1:3])
+print(new_list[1:4])
+print(new_list[1:])
+print(new_list[:2])
