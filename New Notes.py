@@ -77,3 +77,5 @@ for character in list1:
 
 # Changing list into strings
 print("".join(list1))
+
+

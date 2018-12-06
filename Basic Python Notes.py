@@ -73,3 +73,6 @@ print(3 == 3)
 a = 3 # A is set to 3
 a == 3 # Is a equal to 3?
 """
+
+# Function practice
+# a
