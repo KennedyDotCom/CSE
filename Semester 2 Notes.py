@@ -12,7 +12,7 @@ age = input("How old are you?")
 print(age + "? My Dad is older than you")
 
 colors = ["red", "topaz", "white", "orange", "purple"]
-colors.append("cyan")
+colors.append("topaz")
 print(colors)
 
 colors.pop(0)
