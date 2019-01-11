@@ -1,9 +1,8 @@
 import string
 import random
-word_bank = ["smell", "Big", "Computer", "Xbox", "is", "better", "than", "ps4", "AirPods", "Broke", "In", "here"]
+
+word_bank = ["smells", "it", "like", "Xbox", "is", "better", "than", "ps4", "AirPods", "Broke", "In", "here", 'sorry']
 letters = string.ascii_letters
-word_bank
-
 print(word_bank)
-
-print(letters)
+word = random.choice(word_bank)
+print(word)
