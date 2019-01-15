@@ -1,5 +1,5 @@
 #  Lists
-shopping_list = ["whole milk","Xbox One","Trash"]
+shopping_list = ["whole milk", "Xbox One", "Trash"]
 print(shopping_list)
 print(shopping_list[0])
 print("The second thing in the list %s" % shopping_list[1])
@@ -15,7 +15,7 @@ for item in shopping_list:
 3. print the item
 4. print the full list
 '''
-new_list =["eggs", "chesse", "oranges" , "raspberries"]
+new_list = ["eggs", "cheese", "oranges", "raspberries"]
 new_list[2] = "apples"
 print("The last thing in the list is %s" % new_list[len(new_list) - 1])
 print(new_list)
@@ -27,7 +27,7 @@ print(new_list[1:])
 print(new_list[:2])
 
 # Adding things to a List
-christmas_list = [] # Always use square brackets
+christmas_list = []  # Always use square brackets
 christmas_list.append("Tacos")
 christmas_list.append("Bumblebee")
 christmas_list.append("Red Dead Redemption 2")
@@ -77,5 +77,3 @@ for character in list1:
 
 # Changing list into strings
 print("".join(list1))
-
-

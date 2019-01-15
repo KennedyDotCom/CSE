@@ -1,3 +1,4 @@
+import random
 print("Hello World!")
 print()
 # This is a comment . I can write whatever I want
@@ -44,7 +45,7 @@ f(1)
 
 
 #  Random Numbers
-import random  # This should always be on line 1
+# This should always be on line 1
 print(random.randint(0, 100))
 
 # Control Statements
