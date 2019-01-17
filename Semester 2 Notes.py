@@ -21,5 +21,3 @@ print(colors)
 print(len(colors))
 
 print(colors[0])
-
-
