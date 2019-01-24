@@ -12,4 +12,8 @@ while guesses_left >= 1:
     guessed_letter = input("Guess a letter: ")
     letters_guessed.append(guessed_letter)
     print(letters_guessed)
-    
+
+
+
+
+
