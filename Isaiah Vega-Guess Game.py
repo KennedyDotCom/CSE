@@ -1,7 +1,7 @@
 import random
 random1 = random.randint(0, 10)
 win = False
-guess_left = 10
+guess_left = 5
 
 
 while guess_left > 0 and not win:
