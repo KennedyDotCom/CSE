@@ -101,3 +101,15 @@ for state, facts in complex_dictionary.items():
         print(value)
         print("=" * 20)
     print('=' * 20)
+
+# Other Notes
+
+# Adding to a dictionary
+
+states['AL'] = 'Alaska?'  # It isn't Alaska
+
+# Changing a dictionary Value
+
+states['AL'] = 'Alabama'  # It's Alabama
+
+
