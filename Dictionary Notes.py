@@ -45,7 +45,7 @@ complex_dictionary = {
     },
     "VA": {
         "NAME": "Virgina",
-        "POPULATION": 8500000, # 8,500,000
+        "POPULATION": 8500000,  # 8,500,000
         "CITIES": [
             "Richmond",
             "Norfolk",
@@ -111,5 +111,3 @@ states['AL'] = 'Alaska?'  # It isn't Alaska
 # Changing a dictionary Value
 
 states['AL'] = 'Alabama'  # It's Alabama
-
-
