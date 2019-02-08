@@ -3,7 +3,7 @@ coastline = {
         'NAME': 'Main Lobby',
         'DESCRIPTION': 'This is where this begins. \n '
                        'Your Challenge is to find a defuser and disarm a bomb. \n '
-                       'There are Toiliets on one side and stairs on another',
+                       'There are Toilets on one side and stairs on another',
         'PATHS': {
             'NORTH':  'TOILETS',
             'SOUTH':  'SOUTH STAIRS',
@@ -17,8 +17,10 @@ coastline = {
                        'Why here you ask?\n'
                        'Ahead of you is were you make or bake food',
         'PATHS': {
-            'NORTH': 'You need something to break that wall',
-            'SOUTH': ''
+            'NORTH': 'WALL',
+            'SOUTH': 'MAIN LOBBY',
+            'EAST':  'WALL',
+            'WEST':  'SERVICE ENTRANCE'
         }
 
 
