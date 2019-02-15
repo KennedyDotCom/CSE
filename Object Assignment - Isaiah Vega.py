@@ -1,6 +1,7 @@
 class Microwave(object):
     def __init__(self):
         self.buttons
-        self.handles
+        self.handle
         self.color
+        self.plate
         self.
