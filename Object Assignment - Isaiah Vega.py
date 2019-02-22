@@ -17,4 +17,11 @@ class Microwave(object):
             else:
                 print("You are done with %s time" % time)
 
+    def warming_it_up(self):
+        self.duration_of_time = 30
+        print("You are warming your food up")
+
+
+
+
 

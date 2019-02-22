@@ -21,7 +21,19 @@ coastline = {
             'SOUTH': 'MAIN LOBBY',
             'EAST':  'WALL',
             'WEST':  'SERVICE ENTRANCE'
-        }
+        },
+    'SERVICE ENTRANCE': {
+        'NAME': 'SERVICE ENTRANCE',
+        'DESCRIPTION': 'This is where the service men enter at.',
+    
+        'PATHS': {
+            'NORTH': 'WALL',
+            'SOUTH': 'WALL',
+            'EAST': 'TOILETS',
+            'WEST': 'KITCHEN'
+}
+    }
+
 
 
 
