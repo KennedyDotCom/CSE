@@ -29,7 +29,7 @@ class WaterGun(object):
         self.duration_of_pressure = 5
         print("You pump the tank back to full pressure")
 
-#  Initialize the objects
+# Initalize the object
  my_water_gun = WaterGun(5.2, 40, True)
 your_water_gun = WaterGun(1, 1, False)
 wiebe_water_gun = WaterGun(999999999, 999999999999999, True)

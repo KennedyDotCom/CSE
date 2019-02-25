@@ -31,13 +31,8 @@ coastline = {
             'SOUTH': 'WALL',
             'EAST': 'TOILETS',
             'WEST': 'KITCHEN'
-}
-    }
-
-
-
-
-
+},
+    'KITCHEN'
 
 
     }
