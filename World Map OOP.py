@@ -23,13 +23,11 @@ class Player(object):
         self.current_location = newlocation
 
 
-
-
 R19A = Room("R19A")
 parking_lot = Room('The parking lot', None, R19A)
 
-R19A.north = parking_lot
 
+R19A.north = parking_lot
 
 R19A = Room("R19A", 'parking_lot')
 parking_lot = Room('The parking lot', None, R19A)
@@ -44,16 +42,16 @@ while playing:
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.upper() in directions:
+    elif command.lower() in directions:
         try:
-           # command = 'north'
-           room_object = getattr(player.current_location, command)
+            # command = 'north'
+            room_name = getattr(player.current_location, command)
+            room_object = globals()[room_name]
 
-           #NEEDED FOR OPTION 2
-           room_var = globals()[room_object]
-
-           player.move(room_object)
+            player.move(room_object)
         except KeyError:
-        print("I can't go that way.")
+            print("This key does not exist.")
+        except AttributeError:
+            print("I can't go that way")
     else:
-       print("Command Not Recognized")
+        print("Command Not Recognized")

@@ -32,7 +32,41 @@ coastline = {
             'EAST': 'TOILETS',
             'WEST': 'KITCHEN'
 },
-    'KITCHEN'
+    'KITCHEN': {
+        'NAME': 'KITCHEN',
+        'DESCRIPTION': 'This is where the chef cooks his wonderful meals',
+
+        'PATHS': {
+            'NORTH': 'WALL',
+            'SOUTH': 'WALL',
+            'EAST': 'SERVICE ENTRANCE',
+            'WEST': 'HALLWAY'
+        }
+    },
+    'HALLWAY': {
+        'NAME': 'HALLWAY',
+        'DESCRIPTION':'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',
+
+        'PATHS': {
+            'NORTH': 'NORTH STAIRS',
+            'SOUTH': 'BLUE BAR',
+            'WEST': 'SUNRISE BAR',
+            'EAST': 'KITCHEN'
+        }
+    },
+    'NORTH STAIRS': {
+        'NAME': 'NORTH STAIRS',
+        'DESCRIPTION': 'The stairs that goes up to Penthouse and Hookah Lounge',
+
+        'PATHS': {
+            'NORTH': 'HALLWAY UP',
+            'SOUTH': 'HALLWAY DOWN',
+            'EAST': 'WALL',
+            'WEST': 'WALL'
+
+}
+    },
+    '': '',
 
 
     }
