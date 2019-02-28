@@ -66,7 +66,9 @@ coastline = {
 
 }
     },
-    '': '',
+    'HALLWAY UP': {
+        ''
+    }
 
 
     }
