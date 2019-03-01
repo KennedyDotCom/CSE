@@ -38,6 +38,20 @@ class Corvette(Car):
         super(Corvette, self).__init__('Corvette', 'Gas', "slim")
 
 
+class KeylessCar(Car):
+    def __init__(self, name, engine_type, body_type):
+        super(KeylessCar, self).__init__(name, engine_type, body_type)
+
+        def start_engine(self):
+            self.engine_status = True
+            print("You push the button and the car starts")
+
+
 julianna_car = Corvette()
 julianna_car.start_engine()
 julianna_car.move_forward()
+
+adam_car = KeylessCar("Adam's ride", "Diesel", "Toaster")
+adam_car.start_engine()
+adam_car.move_forward()
+adam_car.turn_off()
