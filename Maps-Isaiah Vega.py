@@ -67,7 +67,27 @@ coastline = {
 }
     },
     'HALLWAY UP': {
-        ''
+        'NAME': 'HALLWAY UP',
+        'DESCRIPTION': 'The Hallway upstairs is the main hallway that leads to Billiards, Hookah,and Vip Lounge.',
+
+        'PATHS': {
+            'NORTH': 'NORTH STAIRS',
+            'SOUTH': 'BILLIARDS ROOM',
+            'EAST':  'VIP LOUNGE',
+            'WEST':  'HOOKAH LOUNGE'
+    },
+    'BILLIARDS ROOM': {
+        'NAME': 'BILLIARDS ROOM',
+        'DESCRIPTION': 'This is where you and your friends go to play pool.',
+
+        'PATHS': {
+            'NORTH': 'HALLWAY UP',
+            'SOUTH': 'AQUARIUM',
+            'EAST': 'WALL',
+            'WEST': 'WALL'
+
+
+        }
     }
 
 
