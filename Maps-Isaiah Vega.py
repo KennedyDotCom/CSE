@@ -85,8 +85,35 @@ coastline = {
             'SOUTH': 'AQUARIUM',
             'EAST': 'WALL',
             'WEST': 'WALL'
+    },
+    'AQUARIUM': {
+        'NAME': 'AQUARIUM',
+        'DESCRIPTION': 'This is where all the fish are and swimming',
 
+        'PATHS': {
+            'NORTH': 'BILLARDS ROOM',
+            'SOUTH': 'WALL',
+            'EAST': 'SOUTH HALLWAY',
+            'WEST': 'WALL'
+        }
+    },
+    'SOUTH HALLWAY': {
+        'NAME': 'SOUTH HALLWAY',
+        'DESCRIPTION': 'This hallway takes you to closer to the bomb.',
 
+        'PATHS': {
+            'NORTH': 'COURTYARD',
+            'SOUTH': 'WALL',
+            'EAST': 'HALLWAY UP EAST',
+            'WEST': 'AQUARIUM'
+        }
+    },
+    'HALLWAY UP EAST': {
+        'NAME': 'HALLWAY EAST',
+        'DESCRIPTION': 'This is your final hallway towards the bomb.',
+
+        'PATHS': ''
+    }
         }
     }
 
