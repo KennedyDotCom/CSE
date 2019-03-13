@@ -112,7 +112,9 @@ coastline = {
         'NAME': 'HALLWAY EAST',
         'DESCRIPTION': 'This is your final hallway towards the bomb.',
 
-        'PATHS': ''
+        'PATHS': {
+            'NORTH': ''
+        }
     }
         }
     }
