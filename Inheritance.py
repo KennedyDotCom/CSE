@@ -11,6 +11,7 @@ class Car(Vehicle):
         self.steering_wheel = True
         self.engine_status = False  # Because the engine is off
         self.fuel = 100
+        self.start_engine()
 
     def start_engine(self):
         self.engine_status = True

@@ -59,8 +59,10 @@ parking_lot = Room('The parking lot', None, R19A)
 sword = Weapon("Sword", 15)
 sword2 = Weapon("Orc Sword", 5)
 
+print(Player)
 # Player
 Player = R19A
+print()
 
 R19A.north = parking_lot
 

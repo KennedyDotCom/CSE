@@ -21,7 +21,8 @@ coastline = {
             'SOUTH': 'MAIN LOBBY',
             'EAST':  'WALL',
             'WEST':  'SERVICE ENTRANCE'
-        },
+        }
+    },
     'SERVICE ENTRANCE': {
         'NAME': 'SERVICE ENTRANCE',
         'DESCRIPTION': 'This is where the service men enter at.',
@@ -31,7 +32,8 @@ coastline = {
             'SOUTH': 'WALL',
             'EAST': 'TOILETS',
             'WEST': 'KITCHEN'
-},
+        }
+    },
     'KITCHEN': {
         'NAME': 'KITCHEN',
         'DESCRIPTION': 'This is where the chef cooks his wonderful meals',
@@ -45,7 +47,7 @@ coastline = {
     },
     'HALLWAY': {
         'NAME': 'HALLWAY',
-        'DESCRIPTION':'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',
+        'DESCRIPTION': 'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',
 
         'PATHS': {
             'NORTH': 'NORTH STAIRS',
@@ -75,6 +77,7 @@ coastline = {
             'SOUTH': 'BILLIARDS ROOM',
             'EAST':  'VIP LOUNGE',
             'WEST':  'HOOKAH LOUNGE'
+        }
     },
     'BILLIARDS ROOM': {
         'NAME': 'BILLIARDS ROOM',
@@ -85,6 +88,7 @@ coastline = {
             'SOUTH': 'AQUARIUM',
             'EAST': 'WALL',
             'WEST': 'WALL'
+        }
     },
     'AQUARIUM': {
         'NAME': 'AQUARIUM',
@@ -113,13 +117,39 @@ coastline = {
         'DESCRIPTION': 'This is your final hallway towards the bomb.',
 
         'PATHS': {
-            'NORTH': ''
+            'NORTH': 'THEATER',
+            'SOUTH': 'WALL',
+            'EAST': 'SOUTH STAIRS',
+            'WEST': 'SOUTH HALLWAY'
+        }
+    },
+    'THEATER':{
+        'NAME':'THEATER',
+        'DESCRIPTION':'This is where you watch movies with friends or love ones',
+
+        'PATHS': {
+            'NORTH': 'PENTHOUSE',
+            'SOUTH': 'HALLWAY UP EAST',
+            'EAST': 'WALL',
+            'WEST': 'WALL'
+        }
+    },
+    'PENTHOUSE':{
+        'NAME':'PENTHOUSE',
+        'DESCRIPTION':'This is where you stay a sleep in the nice air of Spain',
+
+        'PATHS': {
+            'NORTH': 'HALL OF FAME',
+            'SOUTH': '',
+            'EAST': '',
+            'WEST': ''
         }
     }
-        }
-    }
-
-
-    }
-
 }
+
+
+
+
+
+
+
