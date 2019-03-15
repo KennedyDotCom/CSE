@@ -65,8 +65,7 @@ coastline = {
             'SOUTH': 'HALLWAY DOWN',
             'EAST': 'WALL',
             'WEST': 'WALL'
-
-}
+        }
     },
     'HALLWAY UP': {
         'NAME': 'HALLWAY UP',
@@ -123,9 +122,9 @@ coastline = {
             'WEST': 'SOUTH HALLWAY'
         }
     },
-    'THEATER':{
-        'NAME':'THEATER',
-        'DESCRIPTION':'This is where you watch movies with friends or love ones',
+    'THEATER': {
+        'NAME': 'THEATER',
+        'DESCRIPTION': 'This is where you watch movies with friends or love ones',
 
         'PATHS': {
             'NORTH': 'PENTHOUSE',
@@ -134,22 +133,51 @@ coastline = {
             'WEST': 'WALL'
         }
     },
-    'PENTHOUSE':{
-        'NAME':'PENTHOUSE',
-        'DESCRIPTION':'This is where you stay a sleep in the nice air of Spain',
+    'PENTHOUSE': {
+        'NAME': 'PENTHOUSE',
+        'DESCRIPTION': 'This is where you stay a sleep in the nice air of Spain',
 
         'PATHS': {
             'NORTH': 'HALL OF FAME',
-            'SOUTH': '',
-            'EAST': '',
-            'WEST': ''
+            'SOUTH': 'THEATER',
+            'EAST': 'WALL',
+            'WEST': 'WALL'
         }
+    },
+    'HALL OF FAME': {
+        'NAME': 'HALL OF FAME',
+        'DESCRIPTION': 'This is where you go to see the best of the best.',
+
+        'PATHS': {
+            'NORTH': 'WALL',
+            'SOUTH': 'PENTHOUSE',
+            'EAST': 'VIP LOUNGE',
+            'WEST': 'WALL'
+        }
+
+    },
+    'VIP LOUNGE': {
+        'NAME': 'VIP LOUNGE',
+        'DESCRIPTION': 'The bomb is right there go defuse the bomb and get the hell outta there.',
+
+        'PATHS': {
+            'NORTH': 'WALL',
+            'SOUTH': 'WALL',
+            'EAST': 'PENTHOUSE',
+            'WEST': 'WALL'
+        }
+
     }
 }
 
 
+current_node = coastline['Main Lobby']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
+playing = True
 
-
-
-
-
+while playing:
+    print(current_node('NAME'))
+    command = input('>_')
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif 
