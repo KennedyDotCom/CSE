@@ -180,4 +180,11 @@ while playing:
     command = input('>_')
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif 
+    elif command.upper() in directions:
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = coastline[room_name]
+        except KeyError:
+            print("I can't go that way.")
+    else:
+        print('Command not recognized')
