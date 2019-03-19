@@ -176,7 +176,7 @@ directions = ['NORTH', 'SOUTH', 'EAST', 'WEST']
 playing = True
 
 while playing:
-    print(current_node('NAME'))
+    print(current_node)
     command = input('>_')
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
