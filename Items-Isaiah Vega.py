@@ -1,15 +1,3 @@
-class Items(object):
-    def __init__(self, name):
-        self.name = name
-
-
-class Weapons(Items):
-    def __init__(self, name, swing, block):
-        super(Weapons, self).__init__(name)
-        self.swing = swing
-        self.block = block
-
-
 class Room(object):
     def __init__(self, name, north=None, south=None, east=None, west=None, description=''):
         self.name = name
@@ -20,23 +8,48 @@ class Room(object):
         self.description = description
 
 
-class Characters(object):
-    def __init__(self, name, health, weapon):
+class Items(object):
+    def __init__(self, name):
         self.name = name
-        self.health = health
-        self.weapon = weapon
+
+
+class Weapons(Items):
+    def __init__(self, name, damage):
+        super(Weapons, self).__init__(name)
+        self.damage = damage
+
+
+class Stim(Items):
+    def __init__(self, name, heal):
+        super(Stim, self).__init__(name)
+        self.heal = heal
 
 
 class Player(object):
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, starting_location):
         self.health = 100
         self.current_location = starting_location
         self.inventory = []
         self.damage = 10
 
+    def heal(self, health):
+        if health > 100:
+            health += 25
+
     def move(self, new_location):
+        """
+
+        :param new_location:
+        :return:
+        """
         self.current_location = new_location
+
+
+class Characters(object):
+    def __init__(self, name, health, weapon):
+            self.name = name
+            self.health = health
+            self.weapon = weapon
 
     def take_damage(self, damage):
         self.health -= damage
@@ -47,3 +60,5 @@ class Player(object):
     def attack(self, target):
         print("%s attack %s for %d damage" % (self.name, target.name, self.take_damage()))
         target.take_damage(self.weapon.damage)
+
+
