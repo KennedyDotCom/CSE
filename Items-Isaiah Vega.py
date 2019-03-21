@@ -25,9 +25,16 @@ class Stim(Items):
         self.heal = heal
 
 
+class Rook(Items):
+    def __init__(self):
+        super(Rook, self).__init__(Rook)
+        self.armor = 25
+
+
 class Player(object):
     def __init__(self, starting_location):
         self.health = 100
+        self.armor = 0
         self.current_location = starting_location
         self.inventory = []
         self.damage = 10
@@ -35,6 +42,10 @@ class Player(object):
     def heal(self, health):
         if health > 100:
             health += 25
+
+    def plates(self, armor):
+        if armor > 0:
+            armor += 25
 
     def move(self, new_location):
         """
@@ -60,5 +71,3 @@ class Characters(object):
     def attack(self, target):
         print("%s attack %s for %d damage" % (self.name, target.name, self.take_damage()))
         target.take_damage(self.weapon.damage)
-
-
