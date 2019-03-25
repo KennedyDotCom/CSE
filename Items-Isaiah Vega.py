@@ -71,3 +71,17 @@ class Characters(object):
     def attack(self, target):
         print("%s attack %s for %d damage" % (self.name, target.name, self.take_damage()))
         target.take_damage(self.weapon.damage)
+
+
+class Finka(Items):
+    def __init__(self, boost):
+        super(Finka, self).__init__()
+        self.boost = boost
+        self.health = 100
+        self.time =
+
+    def boost(self, boost):
+        self.health += boost
+        if self.health <= 100:
+            self.boost + 25
+
