@@ -75,13 +75,18 @@ class Characters(object):
 
 class Finka(Items):
     def __init__(self, boost):
-        super(Finka, self).__init__()
+        super(Finka, self).__init__(boost)
         self.boost = boost
         self.health = 100
-        self.time =
+        self.time = 30
 
     def boost(self, boost):
         self.health += boost
         if self.health <= 100:
             self.boost + 25
+        if self.time < 30:
+
+
+
+
 
