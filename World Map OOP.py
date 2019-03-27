@@ -48,7 +48,7 @@ class Character(object):
         print('%s had %d health left' % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attack %s for %d damage" % (self.name, target.name, self.take_damage()))
+        print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
 

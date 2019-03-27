@@ -57,9 +57,10 @@ class Player(object):
 
 
 class Characters(object):
-    def __init__(self, name, health, weapon):
+    def __init__(self, name, health, armor, weapon):
             self.name = name
             self.health = health
+            self.armor = armor
             self.weapon = weapon
 
     def take_damage(self, damage):
@@ -69,7 +70,7 @@ class Characters(object):
         print('%s had %d health left' % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attack %s for %d damage" % (self.name, target.name, self.take_damage()))
+        print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
 
@@ -83,10 +84,6 @@ class Finka(Items):
     def boost(self, boost):
         self.health += boost
         if self.health <= 100:
-            self.boost + 25
-        if self.time < 30:
-
-
-
+            self.boost += 25
 
 
