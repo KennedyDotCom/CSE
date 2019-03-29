@@ -49,7 +49,7 @@ class Character(object):
 
     def attack(self, target):
         print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
-        target.take_damage(self.weapon.damage)
+         target.take_damage(self.weapon.damage)
 
 
 R19A = Room("R19A")

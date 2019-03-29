@@ -53,41 +53,6 @@ class Player(object):
         if armor > 0:
             armor += 25
 
-    def move(self, new_location):
-        """
 
-        :param new_location:
-        :return:
-        """
-        self.current_location = new_location
-
-
-class Characters(object):
-    def __init__(self, name, health, armor, weapon):
-            self.name = name
-            self.health = health
-            self.armor = armor
-            self.weapon = weapon
-
-    def take_damage(self, damage):
-        self.health -= damage
-        if self.health < 0:
-            self.health = 0
-        print('%s had %d health left' % (self.name, self.health))
-
-    def attack(self, target):
-        print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
-        target.take_damage(self.weapon.damage)
-
-
-class Finka(Items):
-    def __init__(self, boost):
-        super(Finka, self).__init__(boost)
-        self.boost = boost
-        self.health = 100
-        self.time = 30
-
-    def boost(self, boost):
-        self.health += boost
-        if self.health <= 100:
-            self.boost += 25
+Coastline = Room("Coastline")
+Main_Lobby = Room("Toliet", 'South Stairs')
