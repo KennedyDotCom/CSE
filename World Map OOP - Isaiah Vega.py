@@ -17,6 +17,7 @@ class Items(object):
 class Weapons(Items):
     def __init__(self, name, damage):
         super(Weapons, self).__init__(name)
+        self.durability = 100
         self.damage = damage
 
 
@@ -38,6 +39,12 @@ class Rook(Items):
         self.armor = 25
 
 
+class Defuser(Items):
+    def __init__(self, name, usable=True):
+        super(Defuser, self).__init__(name)
+        self.usable = usable
+
+
 class Player(object):
     def __init__(self, starting_location):
         self.health = 100
@@ -47,10 +54,13 @@ class Player(object):
         self.damage = 10
 
     def move(self, new_location):
-    self.current_location = new_location
+        """
 
+        :param new_location:
+        :return:
+        """
 
-
+        self.current_location = new_location
 
     def heal(self, health):
         if health > 100:
@@ -61,10 +71,15 @@ class Player(object):
             armor += 25
 
 
+defuser = Defuser("Defuser", True)
+
+
 Main_Lobby = Room("Main Lobby", "Toilets", "South Stairs", None, "Security Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
-                                'There are Toilets on one side and stairs on another',)
-Toilet = Room("Toilet", None, 'Main Lobby', None, 'Service Entrance',)
+                                'There are Toilets on one side and stairs on another', defuser)
+Toilet = Room("Toilet", None, 'Main Lobby', None, 'Service Entrance', 'This is where you go to the bathroom.'
+              'Why here you ask?' 'Ahead of you is were you make or bake food',)
+
 
 player = Player(Main_Lobby)
 playing = True

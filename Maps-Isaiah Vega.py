@@ -13,8 +13,8 @@ coastline = {
     },
     'TOILETS': {
         'NAME': 'TOILETS',
-        'DESCRIPTION': 'This is where you go to the bathroom. \n'
-                       'Why here you ask?\n'
+        'DESCRIPTION': 'This is where you go to the bathroom.'
+                       'Why here you ask?'
                        'Ahead of you is were you make or bake food',
         'PATHS': {
             'NORTH': 'WALL',
