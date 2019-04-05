@@ -34,8 +34,8 @@ class Stim(Items):
 
 
 class Rook(Items):
-    def __init__(self):
-        super(Rook, self).__init__(Rook)
+    def __init__(self, name, armor):
+        super(Rook, self).__init__(name, armor)
         self.armor = 25
 
 
@@ -67,18 +67,29 @@ class Player(object):
             health += 25
 
     def plates(self, armor):
-        if armor > 0:
+        if armor < 0:
             armor += 25
 
 
 defuser = Defuser("Defuser", True)
 
+Stim = Stim("Stim Pistol", 25)
+
+Rook = Rook("Rook Armor", 50)
 
 Main_Lobby = Room("Main Lobby", "Toilets", "South Stairs", None, "Security Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
                                 'There are Toilets on one side and stairs on another', defuser)
 Toilet = Room("Toilet", None, 'Main Lobby', None, 'Service Entrance', 'This is where you go to the bathroom.'
-              'Why here you ask?' 'Ahead of you is were you make or bake food',)
+              'Why here you ask?' 'Ahead of you is were you make or bake food', )
+
+Service_Entrance = Room(None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
+
+Kitchen = Room(None, None, 'Service Entrance', 'Hallway','This is where the chef cooks his wonderful meals')
+
+Hallway = Room('North Stairs', 'Blue Bar', 'Kitchen', 'Sunrise Bar',
+               'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',)
+
 
 
 player = Player(Main_Lobby)
