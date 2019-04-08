@@ -135,7 +135,7 @@ coastline = {
     },
     'PENTHOUSE': {
         'NAME': 'PENTHOUSE',
-        'DESCRIPTION': 'This is where you stay a sleep in the nice air of Spain',
+        'DESCRIPTION': 'This is where you watch movies with friends or love ones',
 
         'PATHS': {
             'NORTH': 'HALL OF FAME',

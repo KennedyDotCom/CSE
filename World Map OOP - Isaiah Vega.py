@@ -79,28 +79,51 @@ Rook = Rook("Rook Armor", 50)
 
 Main_Lobby = Room("Main Lobby", "Toilets", "South Stairs", None, "Security Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
-                                'There are Toilets on one side and stairs on another', defuser)
+                                'There are Toilets on one side and stairs on another',)
 Toilet = Room("Toilet", None, 'Main Lobby', None, 'Service Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food', )
 
 Service_Entrance = Room(None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
 
-Kitchen = Room(None, None, 'Service Entrance', 'Hallway','This is where the chef cooks his wonderful meals')
+Kitchen = Room(None, None, 'Service Entrance', 'Hallway', 'This is where the chef cooks his wonderful meals')
 
 Hallway = Room('North Stairs', 'Blue Bar', 'Kitchen', 'Sunrise Bar',
                'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',)
 
+North_Stairs = Room('Hallway Up', 'Hallway Down', None, None, 'The stairs that goes up to Penthouse and Hookah Lounge',)
 
+Hallway_Up = Room('North Stairs', 'Billiards Room', 'Vip Lounge', 'Hookah Lounge',
+                  'The Hallway upstairs is the main hallway that leads to Billiards, Hookah,and Vip Lounge.',)
+
+Billiards_Room = Room('Hallway Up', 'Aquarium', None, None, 'This is where you and your friends go to play pool.',)
+
+Aquarium = Room('Billiards_Room', None, 'South Hallway', None, 'This is where all the fish are and swimming',)
+
+South_Hallway = Room('Courtyard', None, 'Hallway_Up East', 'Aquarium', 'This hallway takes you to closer to the bomb.',)
+
+Hallway_Up_East = Room('Theater', None, 'South Stairs', 'South Hallway',
+                       'This is your final hallway towards the bomb.',)
+
+Theater = Room('Penthouse', 'Hallway Up East', None, None, 'This is where you watch movies with friends or love ones',)
+
+Penthouse = Room('Hall Of Fame', 'Theater', None, None, 'This is where you watch movies with friends or love ones',)
 
 player = Player(Main_Lobby)
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
+short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
 # Controller
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+
     command = input(">_")
+
+    if command.lower() in short_directions:
+        pos = short_directions.index(command.lower())
+        command = directions[pos]
+
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
