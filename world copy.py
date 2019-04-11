@@ -71,49 +71,40 @@ class Player(object):
             armor += 25
 
 
-Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", None, "Security_Office", 'This is where this begins.'
+Main_Lobby = Room("Main Lobby", "Toilets", "South Stairs", None, "Security Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
                                 'There are Toilets on one side and stairs on another',)
-Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
+Toilet = Room("Toilet", None, 'Main Lobby', None, 'Service Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food', )
 
-Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
+Service_Entrance = Room(None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
 
-Kitchen = Room('Kitchen', None, None, 'Service_Entrance', 'Hallway', 'This is where the chef cooks his wonderful meals')
+Kitchen = Room(None, None, 'Service Entrance', 'Hallway', 'This is where the chef cooks his wonderful meals')
 
-Hallway = Room('Hallway', 'North_Stairs', 'Blue_Bar', 'Kitchen', 'Sunrise_Bar',
-               'This part connects Blue_Bar, Sunrise_Bar, North_Stairs,and Kitchen',)
+Hallway = Room('North Stairs', 'Blue Bar', 'Kitchen', 'Sunrise Bar',
+               'This part connects Blue Bar, Sunrise Bar, North Stairs,and Kitchen',)
 
-North_Stairs = Room('North_Stairs', 'Hallway_Up', 'Hallway_Down', None, None,
-                    'The stairs that goes up to Penthouse and Hookah Lounge',)
+North_Stairs = Room('Hallway Up', 'Hallway Down', None, None, 'The stairs that goes up to Penthouse and Hookah Lounge',)
 
-Hallway_Up = Room('Hallway_Up', 'North_Stairs', 'Billiards_Room', 'Vip_Lounge', 'Hookah_Lounge',
+Hallway_Up = Room('North Stairs', 'Billiards Room', 'Vip Lounge', 'Hookah Lounge',
                   'The Hallway upstairs is the main hallway that leads to Billiards, Hookah,and Vip Lounge.',)
 
-Billiards_Room = Room('Billiards_Room', 'Hallway_Up', 'Aquarium', None, None,
-                      'This is where you and your friends go to play pool.',)
+Billiards_Room = Room('Hallway Up', 'Aquarium', None, None, 'This is where you and your friends go to play pool.',)
 
-Aquarium = Room('Aquarium', 'Billiards_Room', None, 'South_Hallway', None,
-                'This is where all the fish are and swimming',)
+Aquarium = Room('Billiards_Room', None, 'South Hallway', None, 'This is where all the fish are and swimming',)
 
-South_Hallway = Room('South_Hallway', 'Courtyard', None, 'Hallway_Up_East', 'Aquarium',
-                     'This hallway takes you to closer to the bomb.',)
+South_Hallway = Room('Courtyard', None, 'Hallway_Up East', 'Aquarium', 'This hallway takes you to closer to the bomb.',)
 
-South_Stairs = Room('South_Stairs', 'Main_Lobby', None, 'Hallway', None, 'The Stairs that leads up stairs.',)
-
-Hallway_Up_East = Room('Hallway_Up_East', 'Theater', None, 'South_Stairs', 'South_Hallway',
+Hallway_Up_East = Room('Theater', None, 'South Stairs', 'South Hallway',
                        'This is your final hallway towards the bomb.',)
 
-Theater = Room('Theater', 'Penthouse', 'Hallway_Up_East', None, None,
-               'This is where you watch movies with friends or love ones',)
+Theater = Room('Penthouse', 'Hallway Up East', None, None, 'This is where you watch movies with friends or love ones',)
 
-Penthouse = Room('Penthouse', 'Hall_Of_Fame', 'Theater', None, None,
-                 'This is where you watch movies with friends or love ones',)
+Penthouse = Room('Hall Of Fame', 'Theater', None, None, 'This is where you watch movies with friends or love ones',)
 
-Hall_of_Fame = Room('Hall_of_Fame', None, 'Penthouse', 'Vip_Lounge', None,
-                    'This is where you go to see the best of the best.',)
+Hall_of_Fame = Room(None, 'Penthouse', 'Vip Lounge', None, 'This is where you go to see the best of the best.',)
 
-Vip_Lounge = Room('Vip_Lounge', None, None, 'Penthouse', None,
+Vip_Lounge = Room(None, None, 'Penthouse', None,
                   'The bomb is right there go defuse the bomb and get the hell outta there.',)
 
 player = Player(Main_Lobby)
