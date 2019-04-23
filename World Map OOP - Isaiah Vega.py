@@ -20,6 +20,12 @@ class Weapons(Items):
         self.durability = 100
         self.damage = damage
 
+class Drone(Weapons):
+    def __init__(self, name):
+        super(Drone, self).__init__(name)
+        self.name = name
+        self.damage = 5
+        self.durability = 100
 
 class SledgeHammer(Weapons):
     def __init__(self, damage, name):
@@ -34,8 +40,8 @@ class Stim(Items):
 
 
 class Rook(Items):
-    def __init__(self, name, armor):
-        super(Rook, self).__init__(name, armor)
+    def __init__(self, name):
+        super(Rook, self).__init__(name)
         self.armor = 25
 
 
@@ -147,3 +153,9 @@ while playing:
             print("I can't go that way.")
     else:
         print("Command Not Recognized")
+
+
+    elif "Get" in command:
+        target_item = command[4:]
+        found_item = None
+        for thing in player.current_location.item:
