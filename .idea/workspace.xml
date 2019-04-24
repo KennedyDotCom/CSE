@@ -17,14 +17,16 @@
     <SUITE FILE_PATH="coverage/CSE$Maps_Isaiah_Vega.coverage" NAME="Maps-Isaiah Vega Coverage Results" MODIFIED="1554823869317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega__Fix_It__1_.coverage" NAME="Isaiah Vega- Fix It (1) Coverage Results" MODIFIED="1547483799391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega_Guess_Game.coverage" NAME="Isaiah Vega-Guess Game Coverage Results" MODIFIED="1548432697545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$CSV_Notes.coverage" NAME="CSV Notes Coverage Results" MODIFIED="1556119707911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1552577612697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1554824000379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map_Isaiah_Vega.coverage" NAME="Dictionary World Map-Isaiah Vega Coverage Results" MODIFIED="1548953079540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1547569568399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Isaiah_Vega.coverage" NAME="Hangman-Isaiah Vega Coverage Results" MODIFIED="1551285522979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1552491099247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP___Isaiah_Vega.coverage" NAME="World Map OOP - Isaiah Vega Coverage Results" MODIFIED="1554997328291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP___Isaiah_Vega.coverage" NAME="World Map OOP - Isaiah Vega Coverage Results" MODIFIED="1556119624260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object_Assignment___Isaiah_Vega.coverage" NAME="Object Assignment - Isaiah Vega Coverage Results" MODIFIED="1551283120178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$CSV_Notes__1_.coverage" NAME="CSV Notes (1) Coverage Results" MODIFIED="1556120521116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$New_Notes.coverage" NAME="New Notes Coverage Results" MODIFIED="1547743201675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$world_copy.coverage" NAME="world copy Coverage Results" MODIFIED="1554910333052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega_Lucky_7.coverage" NAME="Isaiah Vega-Lucky 7 Coverage Results" MODIFIED="1546963205829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -47,11 +49,11 @@
     <session id="-504886910">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="50" />
+          <entry key="project.closed" value="52" />
           <entry key="project.open.time.123" value="1" />
           <entry key="project.open.time.13" value="6" />
           <entry key="project.open.time.134" value="1" />
-          <entry key="project.open.time.14" value="7" />
+          <entry key="project.open.time.14" value="8" />
           <entry key="project.open.time.15" value="6" />
           <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.18" value="2" />
@@ -79,49 +81,37 @@
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.81" value="1" />
-          <entry key="project.opened" value="62" />
+          <entry key="project.opened" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="32" />
+          <entry key="csv" value="1" />
+          <entry key="py" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="32" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="31" />
-          <entry key="py" value="23275" />
+          <entry key="dummy" value="32" />
+          <entry key="py" value="23538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="31" />
-          <entry key="Python" value="23275" />
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="Python" value="23538" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/World Map OOP-Isaiah Vega.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-              <folding>
-                <marker date="1554824000286" expanded="true" signature="378:490" ph="..." />
-                <marker date="1554824000286" expanded="true" signature="932:1479" ph="..." />
-                <marker date="1554824000286" expanded="true" signature="1009:1018" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Items-Isaiah Vega.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,21 +155,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/World Map OOP - Isaiah Vega.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="17">
+              <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
               <folding>
-                <marker date="1556033941990" expanded="true" signature="405:410" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="569:719" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="593:598" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="1131:1249" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="1271:1276" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="1501:1502" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="1501:1619" ph="..." />
-                <marker date="1556033941990" expanded="true" signature="1501:1620" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="405:410" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="569:722" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="599:604" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="1134:1252" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="1274:1279" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="1504:1505" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="1504:1622" ph="..." />
+                <marker date="1556034153062" expanded="true" signature="1504:1623" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSV Notes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Book1.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78846">
+              <caret line="4638" selection-start-line="4638" selection-end-line="4638" />
             </state>
           </provider>
         </entry>
@@ -222,6 +230,9 @@
         <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/world copy.py" />
         <option value="$PROJECT_DIR$/World Map OOP - Isaiah Vega.py" />
+        <option value="$PROJECT_DIR$/notes/CSB Notes.py" />
+        <option value="$PROJECT_DIR$/notes/CSV Notes.py" />
+        <option value="$PROJECT_DIR$/CSV Notes.py" />
       </list>
     </option>
   </component>
@@ -231,17 +242,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="153" />
-    <option name="y" value="125" />
-    <option name="width" value="946" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="320" />
+    <option name="y" value="47" />
+    <option name="width" value="1610" />
+    <option name="height" value="938" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,11 +261,15 @@
               <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
               <item name="CSE" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,6 +278,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\p9rn\Documents\GitHub\CSE\" />
+      <recent name="C:\Users\p9rn\Documents\GitHub\CSE\notes" />
+      <recent name="C:\Users\p9rn\Documents\GitHub\CSE" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\p9rn\Documents\GitHub\CSE" />
     </key>
@@ -278,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.World Map OOP - Isaiah Vega">
+  <component name="RunManager" selected="Python.CSV Notes (1)">
     <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,7 +322,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Maps-Isaiah Vega" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="CSV Notes (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,7 +335,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Maps-Isaiah Vega.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CSV Notes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,7 +344,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Object Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="CSV Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -331,12 +352,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object Notes.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\p9rn\Documents\GitHub\CSE\CSV Notes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -413,19 +434,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Basic Python Notes" />
-      <item itemvalue="Python.Maps-Isaiah Vega" />
       <item itemvalue="Python.World Map OOP" />
-      <item itemvalue="Python.Object Notes" />
       <item itemvalue="Python.World Map OOP - Isaiah Vega" />
       <item itemvalue="Python.world copy" />
+      <item itemvalue="Python.CSV Notes" />
+      <item itemvalue="Python.CSV Notes (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CSV Notes (1)" />
+        <item itemvalue="Python.CSV Notes" />
         <item itemvalue="Python.World Map OOP - Isaiah Vega" />
         <item itemvalue="Python.world copy" />
         <item itemvalue="Python.World Map OOP" />
-        <item itemvalue="Python.Maps-Isaiah Vega" />
-        <item itemvalue="Python.Object Notes" />
       </list>
     </recent_temporary>
   </component>
@@ -452,15 +473,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21709532" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21677852" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.4737705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.47375888" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -656,18 +677,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP - Isaiah Vega.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
           <folding>
-            <marker date="1556033941990" expanded="true" signature="405:410" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="569:719" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="593:598" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="1131:1249" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="1271:1276" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="1501:1502" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="1501:1619" ph="..." />
-            <marker date="1556033941990" expanded="true" signature="1501:1620" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="405:410" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="569:722" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="599:604" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="1134:1252" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="1274:1279" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="1504:1505" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="1504:1622" ph="..." />
+            <marker date="1556034153062" expanded="true" signature="1504:1623" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Book1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78846">
+          <caret line="4638" selection-start-line="4638" selection-end-line="4638" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
