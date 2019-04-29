@@ -21,8 +21,8 @@ class Weapons(Items):
         self.damage = damage
 
 class Drone(Weapons):
-    def __init__(self, name):
-        super(Drone, self).__init__(name)
+    def __init__(self, name, damage):
+        super(Drone, self).__init__(name, damage)
         self.name = name
         self.damage = 5
         self.durability = 100
@@ -156,6 +156,6 @@ while playing:
 
 
     elif "Get" in command:
-        target_item = command[4:]
-        found_item = None
-        for thing in player.current_location.item:
+    target_item = command[4:]
+    found_item = None
+    for thing in player.current_location.item:
