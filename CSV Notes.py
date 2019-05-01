@@ -30,10 +30,15 @@ def validate(num: str):
 
 def reverse(num: str):
     print(num)
-    print(num[::-1])
+    return num[::-1]
 
 
 reverse("5820859753077330")
+
+
+def valid1(num: str):
+    reversed_version = reverse(num)
+    for i in num: reversed_version:
 
 
 # with open('Book1.csv', 'r') as old_csv:
