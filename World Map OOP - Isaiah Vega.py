@@ -27,6 +27,7 @@ class Drone(Weapons):
         self.damage = 5
         self.durability = 100
 
+
 class SledgeHammer(Weapons):
     def __init__(self, damage, name):
         super(SledgeHammer, self).__init__(damage, name)
@@ -153,9 +154,3 @@ while playing:
             print("I can't go that way.")
     else:
         print("Command Not Recognized")
-
-
-    elif "Get" in command:
-    target_item = command[4:]
-    found_item = None
-    for thing in player.current_location.item:
