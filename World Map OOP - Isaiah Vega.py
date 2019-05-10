@@ -20,6 +20,7 @@ class Weapons(Items):
         self.durability = 100
         self.damage = damage
 
+
 class Drone(Weapons):
     def __init__(self, name, damage):
         super(Drone, self).__init__(name, damage)
