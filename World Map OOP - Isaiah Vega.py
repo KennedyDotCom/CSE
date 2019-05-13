@@ -1,12 +1,12 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description=''):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description='', items=''):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.description = description
-        self.items = []
+        self.items = items
 
 
 class Items(object):
@@ -81,13 +81,14 @@ class Player(object):
 
 Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", None, "Security_Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
-                                'There are Toilets on one side and stairs on another',)
+                                'There are Toilets on one side and stairs on another', 'SledgeHammer')
 Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
-              'Why here you ask?' 'Ahead of you is were you make or bake food', )
+              'Why here you ask?' 'Ahead of you is were you make or bake food',)
 
 Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
 
-Kitchen = Room('Kitchen', None, None, 'Service_Entrance', 'Hallway', 'This is where the chef cooks his wonderful meals')
+Kitchen = Room('Kitchen', None, None, 'Service_Entrance', 'Hallway',
+               'This is where the chef cooks his wonderful meals',)
 
 Hallway = Room('Hallway', 'North_Stairs', 'Blue_Bar', 'Kitchen', 'Sunrise_Bar',
                'This part connects Blue_Bar, Sunrise_Bar, North_Stairs,and Kitchen',)
@@ -155,3 +156,25 @@ while playing:
             print("I can't go that way.")
     else:
         print("Command Not Recognized")
+
+
+    elif "attack" in command:
+    target = command[7:]
+
+    elif "get" in command:
+    target_items = command[4:]
+    found_items = None
+    for thing in player.current_location.items:
+        if thing.name == target.items:
+            found_items = thing
+    if found_items is not None:
+        print("You picked up %s" % found_items.name)
+        player.inventory.append(found_items)
+        for i, items in enumerate(player.current_location.items):
+            if items.name == found_items.name:
+                player.current_location.items.pop(i)
+        else:
+            print('That doesnt exist')
+    else:
+        print('Command Not Recognized')
+
