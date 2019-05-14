@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/CSE$CSV_Notes.coverage" NAME="CSV Notes Coverage Results" MODIFIED="1556119707911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1547569568399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547483570875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega_Sale_Records.coverage" NAME="Isaiah Vega-Sale Records Coverage Results" MODIFIED="1557761201091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega_Sale_Records.coverage" NAME="Isaiah Vega-Sale Records Coverage Results" MODIFIED="1557846894422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega_Lucky_7.coverage" NAME="Isaiah Vega-Lucky 7 Coverage Results" MODIFIED="1546963205829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Isaiah_Vega__Fix_It__1_.coverage" NAME="Isaiah Vega- Fix It (1) Coverage Results" MODIFIED="1547483799391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Hangman_Isaiah_Vega.coverage" NAME="Hangman-Isaiah Vega Coverage Results" MODIFIED="1557329553834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -32,7 +32,7 @@
     <SUITE FILE_PATH="coverage/CSE$New_Notes.coverage" NAME="New Notes Coverage Results" MODIFIED="1547743201675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$world_copy.coverage" NAME="world copy Coverage Results" MODIFIED="1554910333052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Dictionary_Notes.coverage" NAME="Dictionary Notes Coverage Results" MODIFIED="1548865144056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP___Isaiah_Vega.coverage" NAME="World Map OOP - Isaiah Vega Coverage Results" MODIFIED="1557762168228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP___Isaiah_Vega.coverage" NAME="World Map OOP - Isaiah Vega Coverage Results" MODIFIED="1557846890298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/World Map OOP - Isaiah Vega.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="160" column="29" lean-forward="true" selection-start-line="160" selection-start-column="29" selection-end-line="160" selection-end-column="29" />
+            <state>
+              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Isaiah Vega-Sale Records.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="34">
+              <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Isaiah Vega - Validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -160,17 +160,16 @@
         <option value="$PROJECT_DIR$/Sales Records.py" />
         <option value="$PROJECT_DIR$/Sales Record.csv.py" />
         <option value="$PROJECT_DIR$/MyFile.py" />
-        <option value="$PROJECT_DIR$/Isaiah Vega-Sale Records.py" />
         <option value="$PROJECT_DIR$/Isaiah Vega - Validator.py" />
         <option value="$PROJECT_DIR$/World Map OOP - Isaiah Vega.py" />
+        <option value="$PROJECT_DIR$/Isaiah Vega-Sale Records.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="320" />
-    <option name="y" value="47" />
-    <option name="width" value="1610" />
-    <option name="height" value="938" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-12" />
+    <option name="width" value="1134" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -218,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.World Map OOP - Isaiah Vega">
+  <component name="RunManager" selected="Python.Isaiah Vega-Sale Records">
     <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,8 +360,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.World Map OOP - Isaiah Vega" />
         <item itemvalue="Python.Isaiah Vega-Sale Records" />
+        <item itemvalue="Python.World Map OOP - Isaiah Vega" />
         <item itemvalue="Python.Hangman-Isaiah Vega" />
         <item itemvalue="Python.CSV Notes (1)" />
         <item itemvalue="Python.Test" />
@@ -391,11 +390,12 @@
       <workItem from="1557413484427" duration="3197000" />
       <workItem from="1557504107508" duration="2713000" />
       <workItem from="1557759119801" duration="3187000" />
+      <workItem from="1557845349682" duration="3342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39256000" />
+    <option name="totallyTimeSpent" value="42598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,7 +407,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-12" y="0" width="1134" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24093817" />
@@ -415,7 +415,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49707174" visible="true" weight="0.4734561" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.47811815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -564,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Items-Isaiah Vega.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Maps-Isaiah Vega.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -618,10 +611,10 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSV Notes.py">
+    <entry file="file://$PROJECT_DIR$/World Map OOP - Isaiah Vega.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state>
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
@@ -648,24 +641,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Isaiah Vega-Sale Records.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Isaiah Vega - Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP - Isaiah Vega.py">
+    <entry file="file://$PROJECT_DIR$/Items-Isaiah Vega.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="160" column="29" lean-forward="true" selection-start-line="160" selection-start-column="29" selection-end-line="160" selection-end-column="29" />
+        <state relative-caret-position="-344">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Isaiah Vega-Sale Records.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -7,3 +7,4 @@ with open('Sales Records.csv', 'r') as old_csv:
         Items = row[2]
         print(Items)
         print(Profit)
+    if old_csv in reader:

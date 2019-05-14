@@ -1,12 +1,12 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description='', items=''):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description=''):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.description = description
-        self.items = items
+        self.items = []
 
 
 class Items(object):
@@ -81,7 +81,7 @@ class Player(object):
 
 Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", None, "Security_Office", 'This is where this begins.'
                                 'Your Challenge is to find a defuser and disarm a bomb. '
-                                'There are Toilets on one side and stairs on another', 'SledgeHammer')
+                                'There are Toilets on one side and stairs on another',)
 Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food',)
 
