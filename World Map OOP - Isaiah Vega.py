@@ -127,8 +127,9 @@ Vip_Lounge = Room('Vip_Lounge', None, None, 'Penthouse', None,
 
 player = Player(Main_Lobby)
 playing = True
-directions = ['north', 'south', 'east', 'west', 'up', 'down']
-short_directions = ['n', 's', 'e', 'w', 'u', 'd']
+directions = ['north', 'south', 'east', 'west']
+short_directions = ['n', 's', 'e', 'w']
+
 
 # Controller
 while playing:
@@ -156,25 +157,3 @@ while playing:
             print("I can't go that way.")
     else:
         print("Command Not Recognized")
-
-
-    elif "attack" in command:
-    target = command[7:]
-
-    elif "get" in command:
-    target_items = command[4:]
-    found_items = None
-    for thing in player.current_location.items:
-        if thing.name == target.items:
-            found_items = thing
-    if found_items is not None:
-        print("You picked up %s" % found_items.name)
-        player.inventory.append(found_items)
-        for i, items in enumerate(player.current_location.items):
-            if items.name == found_items.name:
-                player.current_location.items.pop(i)
-        else:
-            print('That doesnt exist')
-    else:
-        print('Command Not Recognized')
-
