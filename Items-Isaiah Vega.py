@@ -19,9 +19,15 @@ class Weapons(Items):
         self.damage = damage
 
 
+class Heal(Items):
+    def __init__(self, name, heal):
+        super(Heal, self).__init__(name)
+        self.heal = heal
+
+
 class SledgeHammer(Weapons):
-    def __init__(self):
-        super(SledgeHammer, self).__init__()
+    def __init__(self, name):
+        super(SledgeHammer, self).__init__(name)
         self.swing = True
 
 

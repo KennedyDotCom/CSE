@@ -21,6 +21,72 @@ class Weapons(Items):
         self.damage = damage
 
 
+class Heal(Items):
+    def __init__(self, name, heal):
+        super(Heal, self).__init__(name)
+        self.heal = heal
+
+
+class Frag(Weapons):
+    def __init__(self, name, damage):
+        super(Frag, self).__init__(name, damage)
+        self.damage = 20
+
+
+class BearTrap(Weapons):
+    def __init__(self, name, damage):
+        super(BearTrap, self).__init__(name, damage)
+        self.damage = 100
+
+
+class Canster(Weapons):
+    def __init__(self, name, damage):
+        super(Canster, self).__init__(name, damage)
+        self.damage = 5
+
+
+class KapKan(Weapons):
+    def __init__(self, name, damage):
+        super(KapKan, self).__init__(name, damage)
+        self.damage = 60
+
+
+class Gu(Weapons):
+    def __init__(self, name, damage):
+        super(Gu, self).__init__(name, damage)
+        self.damage = 4
+
+
+class ShockDrone(Weapons):
+    def __init__(self, name, damage):
+        super(ShockDrone, self).__init__(name, damage)
+        self.damage = 5
+
+
+class Shield(Weapons):
+    def __init__(self, name, damage):
+        super(Shield, self).__init__(name, damage)
+        self.damage = 10
+
+
+class FlashBang(Weapons):
+    def __init__(self, name, dizzy):
+        super(FlashBang, self).__init__(name, dizzy)
+        self.dizzy = dizzy
+
+
+class Finka(Heal):
+    def __init__(self,name, boost):
+        super(Finka, self).__init__(name, boost)
+        self.boost = 25
+
+
+class Claymore(Weapons):
+    def __init__(self, name, damage):
+        super(Claymore, self).__init__(name, damage)
+        self.damage = damage
+
+
 class Drone(Weapons):
     def __init__(self, name, damage):
         super(Drone, self).__init__(name, damage)
@@ -35,13 +101,13 @@ class SledgeHammer(Weapons):
         self.swing = True
 
 
-class Stim(Items):
+class Stim(Heal):
     def __init__(self, name, heal):
         super(Stim, self).__init__(name)
         self.heal = heal
 
 
-class Rook(Items):
+class Rook(Heal):
     def __init__(self, name):
         super(Rook, self).__init__(name)
         self.armor = 25
@@ -79,9 +145,8 @@ class Player(object):
             armor += 25
 
 
-Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", None, "Security_Office", 'This is where this begins.'
-                                'Your Challenge is to find a defuser and disarm a bomb. '
-                                'There are Toilets on one side and stairs on another',)
+Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'This is where this begins.'
+                                'Your Challenge is to get the defuser and disarm a bomb.')
 Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food',)
 
