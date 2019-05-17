@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description=''):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description='', items):
         self.name = name
         self.north = north
         self.south = south
@@ -25,6 +25,12 @@ class Heal(Items):
     def __init__(self, name, heal):
         super(Heal, self).__init__(name)
         self.heal = heal
+
+
+class Wire(Weapons):
+    def __init__(self, name, damage):
+        super(Wire, self).__init__(name, damage)
+        self.damage = 5
 
 
 class Frag(Weapons):
@@ -103,13 +109,13 @@ class SledgeHammer(Weapons):
 
 class Stim(Heal):
     def __init__(self, name, heal):
-        super(Stim, self).__init__(name)
+        super(Stim, self).__init__(name, heal)
         self.heal = heal
 
 
 class Rook(Heal):
-    def __init__(self, name):
-        super(Rook, self).__init__(name)
+    def __init__(self, name, armor):
+        super(Rook, self).__init__(name, armor)
         self.armor = 25
 
 
@@ -145,8 +151,26 @@ class Player(object):
             armor += 25
 
 
+class Characters(object):
+    def __init__(self, name, health, armor, weapon):
+            self.name = name
+            self.health = health
+            self.armor = armor
+            self.weapon = weapon
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+        print('%s had %d health left' % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
+
+Defuser1 = Defuser()
 Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'This is where this begins.'
-                                'Your Challenge is to get the defuser and disarm a bomb.')
+                                'Your Challenge is to get the defuser and disarm a bomb.', [Defuser1])
 Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food',)
 
@@ -214,11 +238,30 @@ while playing:
             # command = 'north'
             room_name = getattr(player.current_location, command)
             room_object = globals()[room_name]
-
             player.move(room_object)
+
         except KeyError:
             print("This key does not exist")
         except AttributeError:
             print("I can't go that way.")
-    else:
-        print("Command Not Recognized")
+
+    elif 'attack' in command:
+        target_item = command[7:]
+
+    elif 'get' in command:
+        target_item = command[4:]
+        found_item = None
+        for thing in player.current_location.item:
+            if thing.name == target_item:
+                found_item = thing
+            if found_item is not None:
+                print("You picked up %s" % found_item.name)
+                player.inventory.append(found_item)
+                for i, item in enumerate(player.current_location.item):
+                    if item.name == found_item.name:
+                        player.current_location.item.pop(i)
+            else:
+                print("That doesn't exist")
+        else:
+            print('Command Not Recognized')
+

@@ -2,26 +2,6 @@ import csv
 digit_len = 16
 
 
-def num_len(num: str):
-    if len(str(num)) == digit_len:
-        return True
-    return False
-
-
-def last_num(num):
-    digit_len.remove(15)
-
-
-def reverse(num: str):
-    print(num)
-    return num[::-1]
-
-
-reverse()
-
-
-def validate(num: str):
-    if validate(num):
 
 
 
