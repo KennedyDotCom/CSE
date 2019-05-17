@@ -1,12 +1,12 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, west=None, description='', items):
+    def __init__(self, name, north=None, south=None, east=None, west=None, description='', items=None):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.description = description
-        self.items = []
+        self.items = items
 
 
 class Items(object):
@@ -168,51 +168,57 @@ class Characters(object):
         print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
-Defuser1 = Defuser()
-Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'This is where this begins.'
-                                'Your Challenge is to get the defuser and disarm a bomb.', [Defuser1])
-Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
-              'Why here you ask?' 'Ahead of you is were you make or bake food',)
 
-Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
+Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'This is where this begins.'
+                                'Your Challenge is to get the defuser and disarm a bomb.')
+Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
+              'Why here you ask?' 'Ahead of you is were you make or bake food')
+
+Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.',
+                        )
 
 Kitchen = Room('Kitchen', None, None, 'Service_Entrance', 'Hallway',
-               'This is where the chef cooks his wonderful meals',)
+               'This is where the chef cooks his wonderful meals')
 
 Hallway = Room('Hallway', 'North_Stairs', 'Blue_Bar', 'Kitchen', 'Sunrise_Bar',
-               'This part connects Blue_Bar, Sunrise_Bar, North_Stairs,and Kitchen',)
+               'This part connects Blue_Bar, Sunrise_Bar, North_Stairs,and Kitchen')
 
 North_Stairs = Room('North_Stairs', 'Hallway_Up', 'Hallway_Down', None, None,
-                    'The stairs that goes up to Penthouse and Hookah Lounge',)
+                    'The stairs that goes up to Penthouse and Hookah Lounge')
 
 Hallway_Up = Room('Hallway_Up', 'North_Stairs', 'Billiards_Room', 'Vip_Lounge', 'Hookah_Lounge',
-                  'The Hallway upstairs is the main hallway that leads to Billiards, Hookah,and Vip Lounge.',)
+                  'The Hallway upstairs is the main hallway that leads to Billiards, Hookah,and Vip Lounge.')
 
 Billiards_Room = Room('Billiards_Room', 'Hallway_Up', 'Aquarium', None, None,
-                      'This is where you and your friends go to play pool.',)
+                      'This is where you and your friends go to play pool.')
 
 Aquarium = Room('Aquarium', 'Billiards_Room', None, 'South_Hallway', None,
-                'This is where all the fish are and swimming',)
+                'This is where all the fish are and swimming')
 
 South_Hallway = Room('South_Hallway', 'Courtyard', None, 'Hallway_Up_East', 'Aquarium',
-                     'This hallway takes you to closer to the bomb.',)
+                     'This hallway takes you to closer to the bomb.')
 
-South_Stairs = Room('South_Stairs', 'Main_Lobby', None, 'Hallway', None, 'The Stairs that leads up stairs.',)
+South_Stairs = Room('South_Stairs', 'Main_Lobby', None, 'Hallway', None, 'The Stairs that leads up stairs.')
 
 Hallway_Up_East = Room('Hallway_Up_East', 'Theater', None, 'South_Stairs', 'South_Hallway',
-                       'This is your final hallway towards the bomb.',)
+                       'This is your final hallway towards the bomb.')
 
 Theater = Room('Theater', 'Penthouse', 'Hallway_Up_East', None, None,
-               'This is where you watch movies with friends or love ones',)
+               'This is where you watch movies with friends or love ones')
 
 Penthouse = Room('Penthouse', 'Hall_Of_Fame', 'Theater', None, None,
-                 'This is where you watch movies with friends or love ones',)
+                 'This is where you watch movies with friends or love ones')
 
 Hall_of_Fame = Room('Hall_of_Fame', None, 'Penthouse', 'Vip_Lounge', None,
-                    'This is where you go to see the best of the best.',)
+                    'This is where you go to see the best of the best.')
 
 Vip_Lounge = Room('Vip_Lounge', None, None, 'Penthouse', None,
-                  'The bomb is right there go defuse the bomb and get the hell outta there.',)
+                  'The bomb is right there go defuse the bomb and get the hell outta there.')
+
+Vip_Lounge.items = []
+
+
+
 
 player = Player(Main_Lobby)
 playing = True
@@ -244,7 +250,10 @@ while playing:
             print("This key does not exist")
         except AttributeError:
             print("I can't go that way.")
-
+    elif 'defuse bomb' in command.lower and player.current_location == Vip_Lounge:
+        print("You try to defuse the bomb, there are multiple wires one green, one red, one blue")
+        print("Which one do you choose to cut?")
+        
     elif 'attack' in command:
         target_item = command[7:]
 
