@@ -169,13 +169,32 @@ class Characters(object):
         target.take_damage(self.weapon.damage)
 
 
-Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'This is where this begins.'
-                                'Your Challenge is to get the defuser and disarm a bomb.')
+defuser_a = Defuser("Defuser", True)
+Drone_a = Drone('Drone', 5)
+Stim_a = Stim('Stim', 25)
+Rook_a = Rook('Rook', 25)
+SledgeHammer_a = SledgeHammer('SledgeHammar', 100)
+Claymore_a = Claymore("Claymore", 100)
+Canster_a = Canster('Canster', 10)
+Frag_a = Frag('Frag', 99)
+Finka_a = Finka('Finka', 20)
+FlashBang_a = FlashBang("FlashBang", 10)
+Gu_a = Gu("Gu", 15)
+ShockDrone_a = ShockDrone('ShockDrone', 10)
+Shield_a = Shield("Shield", 100)
+KapKan_a = KapKan("KapKan", 60)
+BearTrap_a = BearTrap('BearTrap', 100)
+
+
+Main_Lobby = Room("Main_Lobby", "Toilet", "South_Stairs", "Security_Office", 'Courtyard', 'This is where this begins.'
+                                'Your Challenge is to get the defuser and disarm a bomb. Also if you look on the floor.'
+                                'there is a defuser and a drone get it and '
+                                'explore the map')
+
 Toilet = Room("Toilet", None, 'Main_Lobby', None, 'Service_Entrance', 'This is where you go to the bathroom.'
               'Why here you ask?' 'Ahead of you is were you make or bake food')
 
-Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.',
-                        )
+Service_Entrance = Room('Service_Entrance', None, None, 'Toilet', 'Kitchen', 'This is where the service men enter at.')
 
 Kitchen = Room('Kitchen', None, None, 'Service_Entrance', 'Hallway',
                'This is where the chef cooks his wonderful meals')
@@ -215,12 +234,13 @@ Hall_of_Fame = Room('Hall_of_Fame', None, 'Penthouse', 'Vip_Lounge', None,
 Vip_Lounge = Room('Vip_Lounge', None, None, 'Penthouse', None,
                   'The bomb is right there go defuse the bomb and get the hell outta there.')
 
-Vip_Lounge.items = []
+Main_Lobby.items = [defuser_a, Drone_a]
+Toilet.items = [SledgeHammer_a]
+Service_Entrance.items = [ShockDrone_a, Stim_a]
+Kitchen.items = [Rook_a]
 
-
-
-
-player = Player(Main_Lobby)
+win_condition = False
+player = Player(Vip_Lounge)
 playing = True
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']
@@ -250,27 +270,49 @@ while playing:
             print("This key does not exist")
         except AttributeError:
             print("I can't go that way.")
-    elif 'defuse bomb' in command.lower and player.current_location == Vip_Lounge:
-        print("You try to defuse the bomb, there are multiple wires one green, one red, one blue")
+    elif 'defuse bomb' in command.lower() and player.current_location == Vip_Lounge:
+        print("You try to defuse the bomb, there are 5 wires which do you want to cut")
         print("Which one do you choose to cut?")
-        
+        print("| | | | |\n| | | | |\n| | | | |")
+        bomb_com = input(">_")
+        if bomb_com.lower() in ["1", "first"]:
+            print("You cut the first wire, and the bomb exploded")
+            playing = False
+        elif bomb_com.lower() in ["2", "second"]:
+            print("You defused the bomb!")
+            win_condition = True
+        elif bomb_com.lower() in ["3", "third"]:
+            print("You cut the third wire, and the bomb exploded")
+            playing = False
+        elif bomb_com.lower() in ["4", "forth"]:
+            print("You cut the forth wire, and the bomb exploded")
+            playing = False
+        elif bomb_com.lower() in ["5", "fifth"]:
+            print("You cut the fifth wire, and the bomb exploded")
+            playing = False
+
     elif 'attack' in command:
         target_item = command[7:]
 
     elif 'get' in command:
-        target_item = command[4:]
-        found_item = None
-        for thing in player.current_location.item:
-            if thing.name == target_item:
-                found_item = thing
-            if found_item is not None:
-                print("You picked up %s" % found_item.name)
-                player.inventory.append(found_item)
-                for i, item in enumerate(player.current_location.item):
-                    if item.name == found_item.name:
-                        player.current_location.item.pop(i)
+        target_items = command[4:]
+        found_items = None
+        for thing in player.current_location.items:
+            if thing.name == target_items:
+                found_items = thing
+            if found_items is not None:
+                print("You picked up %s" % found_items.name)
+                player.inventory.append(found_items)
+                for i, items in enumerate(player.current_location.items):
+                    if items.name == found_items.name:
+                        player.current_location.items.pop(i)
             else:
                 print("That doesn't exist")
         else:
             print('Command Not Recognized')
+
+if not playing and not win_condition:
+    print("GAME OVER")
+else:
+    print("You Saved the World")
 
