@@ -153,10 +153,10 @@ class Player(object):
 
 class Characters(object):
     def __init__(self, name, health, armor, weapon):
-            self.name = name
-            self.health = health
-            self.armor = armor
-            self.weapon = weapon
+        self.name = name
+        self.health = health
+        self.armor = armor
+        self.weapon = weapon
 
     def take_damage(self, damage):
         self.health -= damage
@@ -169,7 +169,7 @@ class Characters(object):
         target.take_damage(self.weapon.damage)
 
 
-defuser_a = Defuser("Defuser", True)
+defuser_a = Defuser("defuser", True)
 Drone_a = Drone('Drone', 5)
 Stim_a = Stim('Stim', 25)
 Rook_a = Rook('Rook', 25)
@@ -240,7 +240,7 @@ Service_Entrance.items = [ShockDrone_a, Stim_a]
 Kitchen.items = [Rook_a]
 
 win_condition = False
-player = Player(Vip_Lounge)
+player = Player(Main_Lobby)
 playing = True
 directions = ['north', 'south', 'east', 'west']
 short_directions = ['n', 's', 'e', 'w']

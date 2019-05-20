@@ -167,5 +167,22 @@ class Characters(object):
     def attack(self, target):
         print("%s attack %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
-`
+
+
+defuser_a = Defuser("defuser", True)
+Drone_a = Drone('Drone', 5)
+Stim_a = Stim('Stim', 25)
+Rook_a = Rook('Rook', 25)
+SledgeHammer_a = SledgeHammer('SledgeHammar', 100)
+Claymore_a = Claymore("Claymore", 100)
+Canster_a = Canster('Canster', 10)
+Frag_a = Frag('Frag', 99)
+Finka_a = Finka('Finka', 20)
+FlashBang_a = FlashBang("FlashBang", 10)
+Gu_a = Gu("Gu", 15)
+ShockDrone_a = ShockDrone('ShockDrone', 10)
+Shield_a = Shield("Shield", 100)
+KapKan_a = KapKan("KapKan", 60)
+BearTrap_a = BearTrap('BearTrap', 100)
+
 
