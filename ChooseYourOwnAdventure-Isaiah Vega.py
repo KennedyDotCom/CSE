@@ -82,7 +82,7 @@ class FlashBang(Weapons):
 
 
 class Finka(Heal):
-    def __init__(self,name, boost):
+    def __init__(self, name, boost):
         super(Finka, self).__init__(name, boost)
         self.boost = 25
 
@@ -170,7 +170,7 @@ class Characters(object):
 
 
 defuser_a = Defuser("defuser", True)
-Drone_a = Drone('Drone', 5)
+Drone_a = Drone('drone', 5)
 Stim_a = Stim('Stim', 25)
 Rook_a = Rook('Rook', 25)
 SledgeHammer_a = SledgeHammer('SledgeHammar', 100)
@@ -234,12 +234,16 @@ Hall_of_Fame = Room('Hall_of_Fame', None, 'Penthouse', 'Vip_Lounge', None,
 Vip_Lounge = Room('Vip_Lounge', None, None, 'Penthouse', None,
                   'The bomb is right there go defuse the bomb and get the hell outta there.')
 
+print("\033[1;33m")
+
 Main_Lobby.items = [defuser_a, Drone_a]
 Toilet.items = [SledgeHammer_a]
 Service_Entrance.items = [ShockDrone_a, Stim_a]
 Kitchen.items = [Rook_a]
+Hallway.items = [Finka_a, FlashBang_a]
+North_Stairs.items = [BearTrap_a]
 
-win_condition = False
+
 player = Player(Main_Lobby)
 playing = True
 directions = ['north', 'south', 'east', 'west']
@@ -250,6 +254,8 @@ short_directions = ['n', 's', 'e', 'w']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+    print(player.inventory)
+    print(player.health)
 
     command = input(">_")
 
@@ -280,7 +286,7 @@ while playing:
             playing = False
         elif bomb_com.lower() in ["2", "second"]:
             print("You defused the bomb!")
-            win_condition = True
+            playing = False
         elif bomb_com.lower() in ["3", "third"]:
             print("You cut the third wire, and the bomb exploded")
             playing = False
@@ -300,18 +306,18 @@ while playing:
         for thing in player.current_location.items:
             if thing.name == target_items:
                 found_items = thing
-            if found_items is not None:
-                print("You picked up %s" % found_items.name)
-                player.inventory.append(found_items)
-                for i, items in enumerate(player.current_location.items):
-                    if items.name == found_items.name:
-                        player.current_location.items.pop(i)
-            else:
-                print("That doesn't exist")
+        if found_items is not None:
+            print("You picked up %s" % found_items.name)
+            player.inventory.append(found_items)
+            for i, items in enumerate(player.current_location.items):
+                if items.name == found_items.name:
+                    player.current_location.items.pop(i)
         else:
-            print('Command Not Recognized')
+            print("That doesn't exist")
+    else:
+        print('Command Not Recognized')
 
-if not playing and not win_condition:
+if not playing:
     print("GAME OVER")
 else:
     print("You Saved the World")
